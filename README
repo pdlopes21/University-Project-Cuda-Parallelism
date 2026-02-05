@@ -1,0 +1,9 @@
+Medição só do kernel sem copia de memoria:
+Sem memoria partilhada CPU-GPU nem tree reduction--> 260
+Com memoria partilhada--> 220
+com memoria partilhada e tree reduction--> 180
+Cuda Streams não influenciaram velocidade
+
+Medição total incluindo copia de memória:
+Com memoria copiada fora das streams --> 533
+Com funcoes copiadas dentro da stream --> 375
